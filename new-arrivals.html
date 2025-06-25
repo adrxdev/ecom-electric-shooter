@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintoys PH - New Arrivals</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="https://placehold.co/40x40/4F46E5/FFFFFF?text=VT" alt="Vintoys Logo" class="h-10 w-10 rounded-full mr-3">
+                <a href="index.html" class="text-2xl font-bold text-indigo-700 hover:text-indigo-900 transition-colors duration-300">Vintoys PH</a>
+            </div>
+
+            <!-- Navigation Menu (Desktop) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Home</a>
+                <a href="shop-all.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Shop All</a>
+                <a href="new-arrivals.html" class="text-indigo-600 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">New Arrivals</a>
+                <a href="pre-orders.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Pre-orders</a>
+                <a href="about-us.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">About Us</a>
+                <a href="contact-us.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Contact Us</a>
+            </nav>
+
+            <!-- Icons (Cart, User, Search) -->
+            <div class="flex items-center space-x-5">
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-600 transition-colors duration-300 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <nav id="mobile-menu" class="md:hidden mt-4 bg-gray-50 rounded-lg shadow-inner py-2 px-4 hidden">
+            <a href="index.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Home</a>
+            <a href="shop-all.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Shop All</a>
+            <a href="new-arrivals.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">New Arrivals</a>
+            <a href="pre-orders.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Pre-orders</a>
+            <a href="about-us.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">About Us</a>
+            <a href="contact-us.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area - New Arrivals Page -->
+    <main id="main-content">
+        <section class="container mx-auto py-16 px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+                Fresh Off The Shelf: New Arrivals!
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- New Arrival Product Card 1 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/E1BEE7/263238?text=New+Anime+Figure" alt="New Anime Figure" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Brand New Anime Figure</h3>
+                        <p class="text-gray-600 text-sm mb-2">Latest Collection</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 3,800.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Brand New Anime Figure">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- New Arrival Product Card 2 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/C8E6C9/263238?text=Limited+Edition+Pop" alt="Limited Edition Pop" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Limited Edition Pop Figure</h3>
+                        <p class="text-gray-600 text-sm mb-2">Exclusive Drop</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 1,600.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Limited Edition Pop Figure">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- New Arrival Product Card 3 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/FFFDE7/263238?text=New+Plushie+Friend" alt="New Plushie Friend" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">New Cuddly Plushie Friend</h3>
+                        <p class="text-gray-600 text-sm mb-2">Soft & Adorable</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 850.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="New Cuddly Plushie Friend">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- New Arrival Product Card 4 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/FFCDD2/263238?text=Luxury+Collectible" alt="Luxury Collectible" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Luxury Collector's Piece</h3>
+                        <p class="text-gray-600 text-sm mb-2">Premium Series</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 5,500.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Luxury Collector's Piece">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12 rounded-t-lg px-6 md:px-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Vintoys PH</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Your trusted source for premium action figures, collectibles, and toys in the Philippines. We bring your favorite characters to life.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="about-us.html" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">About Us</a></li>
+                    <li><a href="shop-all.html" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Shop All</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">FAQs</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Shipping & Returns</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Customer Service</h3>
+                <ul class="space-y-2">
+                    <li><a href="contact-us.html" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Order Tracking</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500">
+             &copy; 2025 ADRXDEV. All rights reserved. Designed for testing purposes.
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 z-50 hidden">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </button>
+
+    <!-- Add to Cart Confirmation Message -->
+    <div id="add-to-cart-message" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-xl hidden transition-opacity duration-300 opacity-0 z-[100]">
+        <!-- Message will be dynamically inserted here -->
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintoys PH - Shop All</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="https://placehold.co/40x40/4F46E5/FFFFFF?text=VT" alt="Vintoys Logo" class="h-10 w-10 rounded-full mr-3">
+                <a href="index.html" class="text-2xl font-bold text-indigo-700 hover:text-indigo-900 transition-colors duration-300">Vintoys PH</a>
+            </div>
+
+            <!-- Navigation Menu (Desktop) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Home</a>
+                <a href="shop-all.html" class="text-indigo-600 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Shop All</a>
+                <a href="new-arrivals.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">New Arrivals</a>
+                <a href="pre-orders.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Pre-orders</a>
+                <a href="about-us.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">About Us</a>
+                <a href="contact-us.html" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300 font-medium py-2 px-3 rounded-md">Contact Us</a>
+            </nav>
+
+            <!-- Icons (Cart, User, Search) -->
+            <div class="flex items-center space-x-5">
+               
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-600 transition-colors duration-300 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <nav id="mobile-menu" class="md:hidden mt-4 bg-gray-50 rounded-lg shadow-inner py-2 px-4 hidden">
+            <a href="index.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Home</a>
+            <a href="shop-all.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Shop All</a>
+            <a href="new-arrivals.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">New Arrivals</a>
+            <a href="pre-orders.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Pre-orders</a>
+            <a href="about-us.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">About Us</a>
+            <a href="contact-us.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md transition-colors duration-200">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area - Shop All Page -->
+    <main id="main-content">
+        <section class="container mx-auto py-16 px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+                All Our Amazing Products
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/9FA8DA/FFFFFF?text=Limited+Edition+Figure" alt="Limited Edition Figure" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Limited Edition Figure</h3>
+                        <p class="text-gray-600 text-sm mb-2">Anime Series X</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 3,500.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Limited Edition Figure">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/81C784/FFFFFF?text=Robot+Model+Kit" alt="Robot Model Kit" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Ultimate Robot Model Kit</h3>
+                        <p class="text-gray-600 text-sm mb-2">Mecha Builders</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 2,800.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Ultimate Robot Model Kit">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/FFCC80/263238?text=Cute+Plushie" alt="Cute Plushie" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Cuddly Monster Plushie</h3>
+                        <p class="text-gray-600 text-sm mb-2">Soft & Cuddly</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 750.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Cuddly Monster Plushie">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/C5E1A5/263238?text=Collectible+Statue" alt="Collectible Statue" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Fantasy Warrior Statue</h3>
+                        <p class="text-gray-600 text-sm mb-2">Premium Collectible</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 4,999.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Fantasy Warrior Statue">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/FFCDD2/263238?text=Anime+Keychain" alt="Anime Keychain" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Popular Anime Keychain</h3>
+                        <p class="text-gray-600 text-sm mb-2">Character Accessories</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 250.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Popular Anime Keychain">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/BBDEFB/263238?text=Sci-Fi+Vehicle" alt="Sci-Fi Vehicle" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Space Fighter Vehicle</h3>
+                        <p class="text-gray-600 text-sm mb-2">Sci-Fi Collectible</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 1,800.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Space Fighter Vehicle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/FFF9C4/263238?text=Retro+Gaming+Fig" alt="Retro Gaming Figure" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Retro Gaming Figure</h3>
+                        <p class="text-gray-600 text-sm mb-2">Classic Series</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 1,200.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Retro Gaming Figure">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 8 -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/CFD8DC/263238?text=Building+Blocks" alt="Building Blocks" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Creative Building Blocks Set</h3>
+                        <p class="text-gray-600 text-sm mb-2">Imagination Series</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 900.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Creative Building Blocks Set">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Products for Shop All -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/A7FFEB/263238?text=Anime+Figure+Vol+2" alt="Anime Figure Vol 2" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Anime Figure Vol. 2</h3>
+                        <p class="text-gray-600 text-sm mb-2">New Series Release</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 2,900.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Anime Figure Vol. 2">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/D1C4E9/263238?text=Gundam+Model+HG" alt="Gundam Model HG" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Gundam Model HG Series</h3>
+                        <p class="text-gray-600 text-sm mb-2">Build Your Own Mech</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 1,500.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Gundam Model HG Series">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/B2EBF2/263238?text=Collector+Car" alt="Collector Car" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Die-Cast Collector Car</h3>
+                        <p class="text-gray-600 text-sm mb-2">Classic Vehicles</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 1,100.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Die-Cast Collector Car">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 group">
+                    <img src="https://placehold.co/400x400/FFECB3/263238?text=Pokemon+Figurine" alt="Pokemon Figurine" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 truncate mb-1">Pokemon Figurine Set</h3>
+                        <p class="text-gray-600 text-sm mb-2">Pocket Monsters</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-indigo-700 font-bold text-xl">₱ 1,400.00</span>
+                            <button class="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md add-to-cart-btn" data-product-name="Pokemon Figurine Set">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12 rounded-t-lg px-6 md:px-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Vintoys PH</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Your trusted source for premium action figures, collectibles, and toys in the Philippines. We bring your favorite characters to life.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="about-us.html" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">About Us</a></li>
+                    <li><a href="shop-all.html" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Shop All</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">FAQs</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Shipping & Returns</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Customer Service</h3>
+                <ul class="space-y-2">
+                    <li><a href="contact-us.html" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Order Tracking</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors duration-300 text-2xl" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500">
+            &copy; 2025 ADRXDEV. All rights reserved. Designed for testing purposes.
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 z-50 hidden">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </button>
+
+    <!-- Add to Cart Confirmation Message -->
+    <div id="add-to-cart-message" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-xl hidden transition-opacity duration-300 opacity-0 z-[100]">
+        <!-- Message will be dynamically inserted here -->
+    </div>
+
+    <!-- Custom JavaScript -->
+   <script src="./js/script.js"></script>
+</body>
+</html>
